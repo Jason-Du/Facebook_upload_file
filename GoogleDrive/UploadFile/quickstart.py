@@ -11,8 +11,6 @@ from oauth2client import file, client, tools
 SCOPES = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 
 
-
-
 def delete_drive_service_file(service, file_id):
     service.files().delete(fileId=file_id).execute()
 
